@@ -1,7 +1,6 @@
 import React from 'react';
 import {useState, useEffect, useRef} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {Swiper, SwiperSlide} from 'swiper/react'
 
 import {electronic, transport, realEstate, things, home} from '../../assets'
 import {setCategory} from "../../redux/actions/categories";
