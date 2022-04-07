@@ -1,0 +1,173 @@
+.top-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 0;
+    border-bottom: 1px solid #F2F2F2;
+    background-color: #ffffff;
+}
+
+.top_header-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language{
+    padding: 2px 7px;
+    background-color: #0051BA1C;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in;
+
+    font-size: 12px;
+    line-height: 14px;
+    color:  #0051BA;
+    text-transform: uppercase;
+
+}
+.language:hover{
+    background-color: #EFEFEF;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    gap: 60px;
+}
+
+.right{
+    gap: 70px;
+}
+
+.left  nav{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+
+.item{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: background-color 0.15s ease-in;
+}
+
+nav div:hover{
+    background-color: #EFEFEF;
+}
+
+.registration{
+    display: flex;
+    align-items: center;
+}
+
+.logIn, .signIn{
+    padding: 6px 20px ;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in;
+
+    font-size: 12px;
+    line-height: 14.06px;
+}
+
+.signIn:hover{
+    background-color: #EFEFEF;
+}
+.logIn:hover{
+    background-color: #EFEFEF;
+}
+
+.burger{
+    display: none;
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+}
+
+.arrow{
+    transform: translate(5px, 2px) rotate(-90deg);
+    transition: all 0.2s ease;;
+}
+.arrow.down{
+    transform: translate(5px, 2px) rotate(-90deg);
+    transition: all 0.2s ease;
+}
+.down.up{
+    transform: translate(5px, 2px) rotate(90deg);
+    transition: all 0.2s ease;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 925px) {
+    .left{
+        gap: 40px;
+    }
+    .left nav{
+        gap: 20px;
+    }
+    .right{
+        gap: 45px;
+    }
+    .logIn, .signIn{
+        padding: 6px 15px;
+    }
+    nav div:not(:first-child){
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .left{
+        gap: 25px;
+    }
+    .right{
+        gap: 30px;
+    }
+    .logIn, .signIn, .item{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .burger{
+        margin-left: 10px;
+    }
+    .nav div{
+        display: none;
+    }
+    .left img{
+        width: 80px;
+    }
+
+}
+
+@media screen and (max-width: 525px){
+    .item.not{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container{
+        padding: 0 5px;
+    }
+    .logIn, .signIn, .item{
+        padding: 6px 7px;
+    }
+    .right{
+        gap: 18px;
+    }
+}
+
